@@ -1,121 +1,127 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0;
+  height: 100vh;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 50px;
+}
+
+.header {
+  background-color:var(--primary-color-dark);
+  color:white;
+  width: 100%;
+  height: 50px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+.header span {
+  margin: 10px;
+  padding: 5px;
+
+  text-align: center;
+  font-weight: 500;
+}
+
+.header span:nth-child(1){
+  width: 30%;
+  padding: 15px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  background-color: var(--primary-color-dark);
+  box-shadow: var(--primary-color) 2px 2px 75px;
+  color:white;
+}
+
+.header span:nth-child(2){
+  background-color: var(--primary-color);
+  box-shadow: var(--primary-color-dark) 2px 2px 10px;
+  color: black;
+  width: 100%;
+
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.main article {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main article div {
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--primary-color-dark);
+  text-align: justify;
+}
+
+
+.main article div:nth-child(2){
+  flex-direction: column;
+}
+
+.main article div:nth-child(2) p {
+  font-size:20px;
+  background-color: var(--secondary-color);
+  margin: 15px;
+  color: white;
+  padding: 15px;
+  box-shadow: rgba(20, 20, 20, 0.5) 0 0 15px;
+  border: inset 10px var(--primary-color-dark);
+}
+
+.main article div:nth-child(1) ul {
+  list-style: none;
+  width: 100%;
+  min-height: 50vh;
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.main article div:nth-child(1) ul li {
+  text-align: center;
+  width: 100%;
+}
+
+.main article div:nth-child(1) ul li:nth-child(1) {
+  margin-bottom: 20px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid;
+  border-color: var(--primary-color-light) var(--primary-color-dark);
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.main article div:nth-child(1) ul li button {
+  width: 80%;
+  margin: 5px;
+  padding: 10px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.mdn {
+  padding: 5px;
+  color: white;
+  margin: 5px;
+  background-color: var(--secondary-color-dark);
+  display: block;
   text-align: center;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+.footer {
     width: 100%;
-    flex-direction: column;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
 }

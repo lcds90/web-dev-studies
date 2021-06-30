@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.container_title {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color-light);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.article {
+    padding: 10px;
+    color: white;
+    font-size:20px;
+    height: 100%;
+    background-color: var(--secondary-color-dark);
+    overflow-y: auto;
+}
+
+.article > * {
+    margin: 10px 0;
+}
