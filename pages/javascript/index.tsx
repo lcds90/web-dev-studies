@@ -1,8 +1,8 @@
 import styles from '@styles/LearnPage.module.css';
 import { useState } from 'react';
 import { useRouter } from 'next/router'
-import { ComponentJavascriptHistory } from '@components/Javascript'
-import { ComponentArray } from '@components/Javascript/array';
+import { ComponentJavascriptHistory } from '@components/_Javascript'
+import { ComponentGlobalObjects } from '@components/_Javascript/GlobalObjects';
 
 
 type Topic = {
@@ -15,7 +15,7 @@ export default function PageJavascript() {
   const generateTopic = () => {
     switch (toggleDiv) {
       case 'Array':
-        return <ComponentArray />;
+        return <ComponentGlobalObjects />;
 
       default:
         return <ComponentJavascriptHistory/>;
@@ -42,7 +42,7 @@ export default function PageJavascript() {
               );
             })}
         </aside>
-        <article>{generateTopic()}</article>
+        <article className={styles.topic}>{generateTopic()}</article>
       </section>
       <footer className={styles.footer}>
           Feito por Leonardo Santos

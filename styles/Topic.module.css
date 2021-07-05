@@ -3,6 +3,15 @@
     grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr;
     height: 100%;
+    direction: ltr;
+}
+
+.container_rtl {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+    direction: rtl;
 }
 
 .container_title {

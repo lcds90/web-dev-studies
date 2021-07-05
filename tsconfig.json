@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
+      "@img/*": ["assets/img/*"],
       "@components/*": ["components/*"],
       "@styles/*":["styles/*"],
       "@services/*":["services/*"],

@@ -5,6 +5,7 @@ import { atelierHeathDark as syntaxstyle } from 'react-syntax-highlighter/dist/c
 
 export function ComponentSpread() {
  
+  // LINK https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_syntax
   const codeString = `const numbers = [1, 2, 3];
 numbers.push(4);
 console.log(numbers); // [1, 2, 3, 4]`;

@@ -1,8 +1,8 @@
 import styles from '@styles/LearnPage.module.css';
 import { useState } from 'react';
 import { useRouter } from 'next/router'
-import { ComponentNodeHistory } from '@components/Node'
-import { ComponentEnterviewQuestions } from '@components/Node/EnterviewQuestions'
+import { ComponentNodeHistory } from '@components/_Node'
+import { ComponentEnterviewQuestions } from '@components/_Node/EnterviewQuestions'
 
 
 type Topic = {

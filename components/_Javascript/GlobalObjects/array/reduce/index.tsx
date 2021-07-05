@@ -1,6 +1,6 @@
 import style from '@styles/SubTopic.module.css'
 
-export function ComponentReduce() {
+export function ComponentArrayReduce() {
     return (
         <section className={style.container}>
         <article className={style.container_title}>
