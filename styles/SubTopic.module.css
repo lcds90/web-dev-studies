@@ -24,9 +24,8 @@
     color: var(--primary-color-dark);
 }
 
-.article p {
+.article {
     padding: 10px;
-    color: white;
     font-size:20px;
     font-weight: 350;
     height: 100%;
