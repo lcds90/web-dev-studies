@@ -24,22 +24,11 @@
     color: var(--primary-color-dark);
 }
 
-.article {
+.article p {
     padding: 10px;
     color: white;
     font-size:20px;
     font-weight: 350;
     height: 100%;
     background-color: var(--secondary-color-light);
-}
-
-.code {
-    overflow: auto;
-    background: var(--primary-color-dark);
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
-    border: inset var(--secondary-color-dark) 5px;
-    white-space: pre-line;
 }
