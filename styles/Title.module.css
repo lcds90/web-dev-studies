@@ -36,8 +36,8 @@
     filter:brightness(.3) invert(100)
 }
 
-.title article:nth-of-type(2)::after {
-    content: "Consultar documentação";
+.title article:nth-of-type(2) span {
+    /* content: "Consultar documentação"; */
     position: absolute;
     bottom:5px;
     right: 15px;

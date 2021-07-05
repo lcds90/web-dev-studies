@@ -18,6 +18,7 @@ export function Title({ name, img, link }: Topic) {
             src={img}
             alt={`Imagem representativa de ${name}`}
           />
+          <span>Documentanção: {name}</span>
         </a>
       </article>
     </section>
